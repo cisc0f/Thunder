@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+  	<head>
+    	<meta charset="UTF-8">
+    	<title>Thunder</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+  	<body>
+		<div class="top-menu-container">
+
+		</div>
+		<div class="side-menu-container">
+
+		</div>
+		<div class="webview-container">
+			<webview class="webview" id="webview" src="https://medium.com">
+				<div class="indicator"></div>
+			</webview>
+		</div>
+		
+		<script type = "text/javascript">
+			// Event handlers for loading events.
+			// Use these to handle loading screens, transitions, etc
+			onload = () => {
+			   const webview = document.getElementById('webview')
+			   const indicator = document.querySelector('.indicator')
+   
+			   const loadstart = () => {
+				  indicator.innerText = 'loading...'
+			   }
+   
+			   const loadstop = () => {
+				  indicator.innerText = ''
+			   }
+   
+			   webview.addEventListener('did-start-loading', loadstart)
+			   webview.addEventListener('did-stop-loading', loadstop)
+			}
+		 </script>
+  	</body>
 </html>

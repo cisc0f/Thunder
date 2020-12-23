@@ -1,6 +1,33 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+.top-menu-container {
+  background-color:red;
+  width: auto;
+  height: 40px;
+}
+
+.side-menu-container {
+  background-color: #565453;
+  height: 100%;
+  width: 80px;
+  float: left;
+}
+
+.webview-container {
+  height: 100%;
+  width: auto;
+}
+
+.webview {
+  height: 100%;
+  width: auto;
 }
