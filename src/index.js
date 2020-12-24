@@ -14,8 +14,8 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1200,
     height: 1000,
-	titleBarStyle: 'hiddenInset',
-	vibrancy: 'ultra-dark',
+	  titleBarStyle: 'hiddenInset',
+	  vibrancy: 'ultra-dark',
     webPreferences: {
 	  nodeIntegration: true,
 	  webviewTag: true,
