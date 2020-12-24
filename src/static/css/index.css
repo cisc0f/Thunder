@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+:root {
+  
+}
+
 html {
   height: 100%;
 }
@@ -21,12 +27,14 @@ body {
 
 .arrows-container {
   height: auto;
+  padding-left: 85px;
 }
 
 .arrows-container a {
   height: 40px;
   width: auto;
   display: inline-block;
+  margin-left: 10px;
 }
 
 .arrows-container a img {
@@ -56,7 +64,7 @@ body {
   color: white;
   margin: 10px 5px;
   font-size: 36px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .side-menu a:hover {
@@ -64,7 +72,51 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/*MAINVIEW*/
+/*MAINVIEW(HOME)*/
+.main-section-container {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  box-sizing: border-box;
+  height: calc(100% - 40px);
+  width: auto;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-section {
+  height: 100%;
+  width: auto;
+  padding: 0px 7%;
+}
+
+h1 {
+  color: white;
+}
+
+.grid-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+}
+
+.grid-item {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.7);
+  padding: 60px;
+  margin: 30px 30px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow:
+    rgba(black, 0.66) 0 30px 60px 0,
+    inset #333 0 0 0 5px,
+    inset rgba(white, 0.5) 0 0 0 6px;
+}
+
+
+/*WEBVIEW*/
 .webview-container {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
