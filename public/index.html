@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="UTF-8">
+    	<title>Thunder</title>
+    	
+    	<!-- CSS -->
+		<link rel="stylesheet" href="./static/css/main.css">
+		
+		<!-- Svelte -->
+		<link rel='stylesheet' href='./build/bundle.css'>
+		<script defer src='./build/bundle.js'></script>
+		<!-- Svelte -->
+	</head>
+  	<body>
+		<div id="side-bar-container">
+			<div id="side-bar">
+				<a>A</a>
+				<a>B</a>
+				<a>C</a>
+			</div>
+		</div>
+		<div class="top-menu-container">
+			<div class="arrows-container">
+				<a onclick="goBackwardButton();"><img src="./static/assets/images/left_arrow.png"/></a>
+				<a onclick="goForwardButton();"><img src="./static/assets/images/right_arrow.png"/></a>
+			</div>
+			
+		</div>
+		<div class="webview-container">
+			<webview class="webview" id="webview" src="https://medium.com" preload="./scripts/tabsManager.js">
+				<div class="indicator"></div>
+			</webview>
+		</div>
+		<!-- <div class="main-section-container">
+			<div class="main-section">
+				<h1>Choose your pack</h1>
+				<div class="grid-container">
+					<div class="grid-item">1</div>
+					<div class="grid-item">2</div>
+					<div class="grid-item">3</div>  
+					<div class="grid-item">4</div>
+					<div class="grid-item">5</div>
+					<div class="grid-item">6</div>  
+					<div class="grid-item">7</div>
+					<div class="grid-item">8</div>
+					<div class="grid-item">9</div> 
+				</div>
+			</div>
+		</div> -->
+  	</body>
+</html>

@@ -1,7 +1,9 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserView, BrowserWindow } = require('electron');
 const path = require('path');
+
+// DEV MODE ONLY
 require('electron-reload')(__dirname, {
-	electron: require('../node_modules/electron')
+  electron: require('../node_modules/electron')
 });
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -14,23 +16,26 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1200,
     height: 1000,
-	titleBarStyle: 'hiddenInset',
-	vibrancy: 'ultra-dark',
+	  titleBarStyle: 'hiddenInset',
+    vibrancy: 'tooltip',
     webPreferences: {
-	  nodeIntegration: true,
-	  webviewTag: true,
-	  enableRemoteModule: true 
+      nodeIntegration: true,
+      webviewTag: true,
+      sandbox: true,
+      enableRemoteModule: false,
+      allowPopups: false,
     }
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, '../public/index.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 
   // Maximize window
   mainWindow.maximize()
+
 };
 
 // This method will be called when Electron has finished
