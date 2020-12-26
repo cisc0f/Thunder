@@ -1,5 +1,5 @@
 # Svelte build files
-/public/build
+public/build
 
 # MacOS Files
 Icon?
