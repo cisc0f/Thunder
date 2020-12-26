@@ -1,26 +1,100 @@
 @charset "UTF-8";
+/* MAIN */
+
+/* import */
+@import url('./animate.css');
+@import url('./lazycocce.css');
+
+:root {
+  /* Colors */
+  --main-color: rgba(255, 255, 255, 0.2);
+  --secondary-color: white;
+  --main-bg-color: rgba(255, 255, 255, 0.3);
+  --secondary-bg-color: transparent;
+  /* Fonts */
+  --main-font-size: 16px;
+  --main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --header1-font-size: 32px;
+  --header2-font-size: 24px;
+  --header-font-family: Arial, sans-serif;
+}
 
 html {
+  /* Fonts */
+  font-size: var(--main-font-size);
+  font-weight: normal;
+  /* Layout */
+  padding: 0;
+  margin: 0;
   height: 100%;
+  overflow-wrap: break-word;
+  scroll-behavior: smooth;
+  /* Colors */
+  background-color: var(--main-bg-color) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   height: 100%;
+  padding: 0;
   margin: 0;
   background-color: transparent;
   box-sizing: border-box;
+  font-family: var(--main-font-family);
+  /* Avoid x scroll */
+  overflow-x: hidden;
 }
 
-/*TOPBAR*/
-.top-menu-container {
-  background-color:transparent;
+
+
+/* + + + TAGS + + + */
+
+
+
+/* + + + TAGS + + + */
+
+
+
+/* + + + IDS + + + */
+/* Top bar */
+#top-bar-container {
+  background-color: var(--secondary-bg-color);
   width: 100%;
   height: 40px;
   -webkit-user-select: none;
   -webkit-app-region: drag;
 }
 
+/* Side bar */
+#side-bar-container {
+  box-sizing: border-box;
+  background-color: transparent;
+  height: 100%;
+  width: 65px;
+  padding-top: 40px;
+  float: left;
+}
+
+#side-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  margin: 10px 5px;
+  font-size: 36px;
+  border-radius: 10px;
+}
+
+#side-bar a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* + + + IDS + + + */
+
+
+
+/* + + + CLASSES + + + */
 .arrows-container {
   height: auto;
   padding-left: 85px;
@@ -42,33 +116,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/*SIDEBAR*/
-.side-menu-container {
-  box-sizing: border-box;
-  background-color: transparent;
-  height: 100%;
-  width: 65px;
-  padding-top: 40px;
-  float: left;
-}
 
-.side-menu a {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  transition: all 0.3s ease;
-  color: white;
-  margin: 10px 5px;
-  font-size: 36px;
-  border-radius: 10px;
-}
-
-.side-menu a:hover {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/*MAINVIEW(HOME)*/
+/* MAINVIEW(HOME) */
 .main-section-container {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -112,7 +161,7 @@ h1 {
 }
 
 
-/*WEBVIEW*/
+/* WEBVIEW */
 .webview-container {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -126,3 +175,4 @@ h1 {
   height: 100%;
   width: auto;
 }
+/* + + + CLASSES + + + */
