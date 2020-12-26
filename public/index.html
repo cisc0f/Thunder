@@ -3,24 +3,27 @@
   	<head>
     	<meta charset="UTF-8">
     	<title>Thunder</title>
-		<link rel="stylesheet" href="./static/css/index.css">
-		<link rel='stylesheet' href='./global.css'>
+    	
+    	<!-- CSS -->
+		<link rel="stylesheet" href="./static/css/main.css">
+		
+		<!-- Svelte -->
 		<link rel='stylesheet' href='./build/bundle.css'>
-
 		<script defer src='./build/bundle.js'></script>
+		<!-- Svelte -->
 	</head>
   	<body>
-		<div class="side-menu-container">
-			<div class="side-menu">
+		<div id="side-bar-container">
+			<div id="side-bar">
 				<a>A</a>
 				<a>B</a>
 				<a>C</a>
 			</div>
 		</div>
-		<div class="top-menu-container">
+		<div id="top-bar-container">
 
 		</div>
-		<div class="top-menu-container">
+		<div id="top-bar-container">
 			<div class="arrows-container">
 				<a onclick="goBackwardButton();"><img src="./static/assets/images/left_arrow.png"/></a>
 				<a onclick="goForwardButton();"><img src="./static/assets/images/right_arrow.png"/></a>
