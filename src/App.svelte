@@ -2,16 +2,15 @@
 	export let name;
 </script>
 
-<style lang="scss">
-	$color: red;
+<style>
 	h1 {
-	  color: $color;
+	  color: red;
 	}
 	div {
 	  background: green;
-	  > p {
+	}
+	p {
 		color: #fff;
-	  }
 	}
 </style>
   
