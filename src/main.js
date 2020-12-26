@@ -1,8 +1,11 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+
+// DEV MODE ONLY
 require('electron-reload')(__dirname, {
-	electron: require('../node_modules/electron')
+	electron: require('electron')
 });
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -24,13 +27,14 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, '../public/index.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 
   // Maximize window
   mainWindow.maximize()
+
 };
 
 // This method will be called when Electron has finished

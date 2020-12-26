@@ -2,14 +2,12 @@
 <html>
   	<head>
     	<meta charset="UTF-8">
-<<<<<<< HEAD
     	<title>Thunder</title>
 		<link rel="stylesheet" href="./static/css/index.css">
-=======
-		<title>Thunder</title>
-		<link rel="stylesheet" href="index.css">
-		
->>>>>>> 54761c758a908cb9723e65ff1082288f8c404f94
+		<link rel='stylesheet' href='./global.css'>
+		<link rel='stylesheet' href='./build/bundle.css'>
+
+		<script defer src='./build/bundle.js'></script>
 	</head>
   	<body>
 		<div class="side-menu-container">
@@ -22,24 +20,19 @@
 		<div class="top-menu-container">
 
 		</div>
-		<!-- <div class="top-menu-container">
+		<div class="top-menu-container">
 			<div class="arrows-container">
-<<<<<<< HEAD
-				<a><img src="./static/assets/images/left_arrow.png"/></a>
-				<a><img src="./static/assets/images/right_arrow.png"/></a>
-=======
-				<a onclick="goBackwardButton();"><img src="./images/left_arrow.png" /></a>
-				<a onclick="goForwardButton();"><img src="./images/right_arrow.png"/></a>
->>>>>>> 54761c758a908cb9723e65ff1082288f8c404f94
+				<a onclick="goBackwardButton();"><img src="./static/assets/images/left_arrow.png"/></a>
+				<a onclick="goForwardButton();"><img src="./static/assets/images/right_arrow.png"/></a>
 			</div>
 			
 		</div>
 		<div class="webview-container">
-			<webview class="webview" id="webview" src="https://medium.com">
+			<webview class="webview" id="webview" src="https://medium.com" preload="./scripts/tabsManager.js">
 				<div class="indicator"></div>
 			</webview>
-		</div> -->
-		<div class="main-section-container">
+		</div>
+		<!-- <div class="main-section-container">
 			<div class="main-section">
 				<h1>Choose your pack</h1>
 				<div class="grid-container">
@@ -54,6 +47,6 @@
 					<div class="grid-item">9</div> 
 				</div>
 			</div>
-		</div>
+		</div> -->
   	</body>
 </html>
