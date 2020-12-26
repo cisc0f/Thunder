@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta charset="UTF-8">
+    	<title>Thunder</title>
+		<link rel="stylesheet" href="./static/css/main.css">
+	</head>
+  	<body>
+        <!-- Side Bar -->
+        <% include sidebar.html %>
+
+		<!-- Top Bar -->
+		<% include topbar.html %>
+
+		<!-- Web View -->
+		<div class="webview-container">
+			<webview class="webview" id="webview" src="https://medium.com">
+				<div class="indicator"></div>
+			</webview>
+		</div>
+		
+	</body>
+</html>

@@ -3,6 +3,7 @@ const path = require('path');
 require('electron-reload')(__dirname, {
 	electron: require('../node_modules/electron')
 });
+const ejs = require('ejs');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -24,10 +25,21 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, 'index.ejs'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+  
+  // Load Template Engine
+  let data = {user: {name: "USername"}};
+  let options = {root: __dirname};
+  ejs.renderFile('index.ejs', data, options, function (err, str) {
+    if (err) {
+      console.log(err);
+    }
+    // Load the rendered HTML to the BrowserWindow.
+    mainWindow.loadURL('data:text/html;charset=utf-8,' + encodeURI(str));
+  });
 
   // Maximize window
   mainWindow.maximize()
