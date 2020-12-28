@@ -1,0 +1,8 @@
+/* Side Bar */
+#side-bar-container {
+    box-sizing: border-box;
+    background-color: transparent;
+    height: calc(100% - 40px);
+    width: 65px;
+    float: left;
+}
