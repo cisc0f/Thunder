@@ -1,0 +1,16 @@
+/* Side Bar Content */
+#side-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    margin: 10px 5px;
+    font-size: 36px;
+    border-radius: 10px;
+}
+
+#side-bar a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}

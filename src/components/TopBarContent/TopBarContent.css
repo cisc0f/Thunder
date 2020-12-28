@@ -1,0 +1,21 @@
+/* Top Bar Content */
+.arrows-container {
+    height: auto;
+    padding-left: 85px;
+}
+
+.arrows-container a {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.arrows-container a img {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

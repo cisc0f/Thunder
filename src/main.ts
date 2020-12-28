@@ -17,7 +17,7 @@ const createWindow = () => {
     width: 1200,
     height: 1000,
 	  titleBarStyle: 'hiddenInset',
-    vibrancy: 'tooltip',
+    vibrancy: 'hud',
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true,
