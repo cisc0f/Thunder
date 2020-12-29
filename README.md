@@ -1,16 +1,9 @@
-<center>
-
 # Thunder⚡️ 
 ![npm][npm-url]
 ![GitHub][license-url]
 ![GitHub contributors][contributors-url]
 
-</br>
-
-## Thunder is a bespoke browser for productivity.
-
-</center>
-
+Thunder is a bespoke browser for productivity.
 
 ## Description
 
