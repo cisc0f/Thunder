@@ -92,11 +92,17 @@ button {
   overflow: hidden;
   flex-direction: column;
 }
+
 .active {
   visibility: visible;
+  z-index: 1;
+}
+.active.side-icon-button {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .hidden {
   visibility: hidden;
+  z-index: -999;
 }
 .offscreen {
   visibility: visible !important;
