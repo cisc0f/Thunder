@@ -1,14 +1,13 @@
 <!-- WebView.svelte -->
-<script lang="ts">
+<script>
+    import WebViewContent from '../WebViewContent/WebViewContent.svelte';
     import "./WebView.css";
+    export let url;
 </script>
 
 <style>
 </style>
 
 <div class="webview-container">
-    <webview class="webview" id="webview" src="https://medium.com" preload="./scripts/tabsManager.js">
-        <div class="indicator">
-        </div>
-    </webview>
+    <WebViewContent url={url}/>
 </div>

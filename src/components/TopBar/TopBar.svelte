@@ -1,5 +1,5 @@
 <!-- TopBar.svelte -->
-<script lang="ts">
+<script>
     import TopBarContent from '../TopBarContent/TopBarContent.svelte';
     import "./TopBar.css";
 </script>

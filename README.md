@@ -48,7 +48,6 @@ Please make sure to update tests as appropriate.
 
 See more here: [CHANGELOG.md](CHANGELOG.md)
 
-
 <!-- LINKS -->
 [npm-url]: https://img.shields.io/npm/v/npm?style=for-the-badge
 [license-url]: https://img.shields.io/github/license/cisc0f/Thunder?style=for-the-badge
