@@ -1,0 +1,530 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?34gwe1');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?34gwe1#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?34gwe1') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?34gwe1') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?34gwe1##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconly-broken"], [class*=" iconly-broken"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconly-brokenUser {
+  &:before {
+    content: $iconly-brokenUser; 
+  }
+}
+.iconly-brokenUser1 {
+  &:before {
+    content: $iconly-brokenUser1; 
+  }
+}
+.iconly-brokenActivity {
+  &:before {
+    content: $iconly-brokenActivity; 
+  }
+}
+.iconly-brokenAdd-User {
+  &:before {
+    content: $iconly-brokenAdd-User; 
+  }
+}
+.iconly-brokenArrow---Down-2 {
+  &:before {
+    content: $iconly-brokenArrow---Down-2; 
+  }
+}
+.iconly-brokenArrow---Down-3 {
+  &:before {
+    content: $iconly-brokenArrow---Down-3; 
+  }
+}
+.iconly-brokenArrow---Down-Circle {
+  &:before {
+    content: $iconly-brokenArrow---Down-Circle; 
+  }
+}
+.iconly-brokenArrow---Down-Square {
+  &:before {
+    content: $iconly-brokenArrow---Down-Square; 
+  }
+}
+.iconly-brokenArrow---Down {
+  &:before {
+    content: $iconly-brokenArrow---Down; 
+  }
+}
+.iconly-brokenArrow---Left-2 {
+  &:before {
+    content: $iconly-brokenArrow---Left-2; 
+  }
+}
+.iconly-brokenArrow---Left-3 {
+  &:before {
+    content: $iconly-brokenArrow---Left-3; 
+  }
+}
+.iconly-brokenArrow---Left-Circle {
+  &:before {
+    content: $iconly-brokenArrow---Left-Circle; 
+  }
+}
+.iconly-brokenArrow---Left-Square {
+  &:before {
+    content: $iconly-brokenArrow---Left-Square; 
+  }
+}
+.iconly-brokenArrow---Left {
+  &:before {
+    content: $iconly-brokenArrow---Left; 
+  }
+}
+.iconly-brokenArrow---Right-2 {
+  &:before {
+    content: $iconly-brokenArrow---Right-2; 
+  }
+}
+.iconly-brokenArrow---Right-3 {
+  &:before {
+    content: $iconly-brokenArrow---Right-3; 
+  }
+}
+.iconly-brokenArrow---Right-Circle {
+  &:before {
+    content: $iconly-brokenArrow---Right-Circle; 
+  }
+}
+.iconly-brokenArrow---Right-Square {
+  &:before {
+    content: $iconly-brokenArrow---Right-Square; 
+  }
+}
+.iconly-brokenArrow---Right {
+  &:before {
+    content: $iconly-brokenArrow---Right; 
+  }
+}
+.iconly-brokenArrow---Up-2 {
+  &:before {
+    content: $iconly-brokenArrow---Up-2; 
+  }
+}
+.iconly-brokenArrow---Up-3 {
+  &:before {
+    content: $iconly-brokenArrow---Up-3; 
+  }
+}
+.iconly-brokenArrow---Up-Circle {
+  &:before {
+    content: $iconly-brokenArrow---Up-Circle; 
+  }
+}
+.iconly-brokenArrow---Up-Square {
+  &:before {
+    content: $iconly-brokenArrow---Up-Square; 
+  }
+}
+.iconly-brokenArrow---Up {
+  &:before {
+    content: $iconly-brokenArrow---Up; 
+  }
+}
+.iconly-brokenBag-2 {
+  &:before {
+    content: $iconly-brokenBag-2; 
+  }
+}
+.iconly-brokenBag {
+  &:before {
+    content: $iconly-brokenBag; 
+  }
+}
+.iconly-brokenBookmark {
+  &:before {
+    content: $iconly-brokenBookmark; 
+  }
+}
+.iconly-brokenBuy {
+  &:before {
+    content: $iconly-brokenBuy; 
+  }
+}
+.iconly-brokenCalendar {
+  &:before {
+    content: $iconly-brokenCalendar; 
+  }
+}
+.iconly-brokenCall-Missed {
+  &:before {
+    content: $iconly-brokenCall-Missed; 
+  }
+}
+.iconly-brokenCall-Silent {
+  &:before {
+    content: $iconly-brokenCall-Silent; 
+  }
+}
+.iconly-brokenCall {
+  &:before {
+    content: $iconly-brokenCall; 
+  }
+}
+.iconly-brokenCalling {
+  &:before {
+    content: $iconly-brokenCalling; 
+  }
+}
+.iconly-brokenCamera {
+  &:before {
+    content: $iconly-brokenCamera; 
+  }
+}
+.iconly-brokenCategory {
+  &:before {
+    content: $iconly-brokenCategory; 
+  }
+}
+.iconly-brokenChart {
+  &:before {
+    content: $iconly-brokenChart; 
+  }
+}
+.iconly-brokenChat {
+  &:before {
+    content: $iconly-brokenChat; 
+  }
+}
+.iconly-brokenClose-Square {
+  &:before {
+    content: $iconly-brokenClose-Square; 
+  }
+}
+.iconly-brokenDanger {
+  &:before {
+    content: $iconly-brokenDanger; 
+  }
+}
+.iconly-brokenDelete {
+  &:before {
+    content: $iconly-brokenDelete; 
+  }
+}
+.iconly-brokenDiscount {
+  &:before {
+    content: $iconly-brokenDiscount; 
+  }
+}
+.iconly-brokenDiscovery {
+  &:before {
+    content: $iconly-brokenDiscovery; 
+  }
+}
+.iconly-brokenDocument {
+  &:before {
+    content: $iconly-brokenDocument; 
+  }
+}
+.iconly-brokenDownload {
+  &:before {
+    content: $iconly-brokenDownload; 
+  }
+}
+.iconly-brokenEdit-Square {
+  &:before {
+    content: $iconly-brokenEdit-Square; 
+  }
+}
+.iconly-brokenEdit {
+  &:before {
+    content: $iconly-brokenEdit; 
+  }
+}
+.iconly-brokenFilter-2 {
+  &:before {
+    content: $iconly-brokenFilter-2; 
+  }
+}
+.iconly-brokenFilter {
+  &:before {
+    content: $iconly-brokenFilter; 
+  }
+}
+.iconly-brokenFolder {
+  &:before {
+    content: $iconly-brokenFolder; 
+  }
+}
+.iconly-brokenGame {
+  &:before {
+    content: $iconly-brokenGame; 
+  }
+}
+.iconly-brokenGraph {
+  &:before {
+    content: $iconly-brokenGraph; 
+  }
+}
+.iconly-brokenHeart {
+  &:before {
+    content: $iconly-brokenHeart; 
+  }
+}
+.iconly-brokenHide {
+  &:before {
+    content: $iconly-brokenHide; 
+  }
+}
+.iconly-brokenHome {
+  &:before {
+    content: $iconly-brokenHome; 
+  }
+}
+.iconly-brokenImage-2 {
+  &:before {
+    content: $iconly-brokenImage-2; 
+  }
+}
+.iconly-brokenImage {
+  &:before {
+    content: $iconly-brokenImage; 
+  }
+}
+.iconly-brokenInfo-Circle {
+  &:before {
+    content: $iconly-brokenInfo-Circle; 
+  }
+}
+.iconly-brokenInfo-Square {
+  &:before {
+    content: $iconly-brokenInfo-Square; 
+  }
+}
+.iconly-brokenLocation {
+  &:before {
+    content: $iconly-brokenLocation; 
+  }
+}
+.iconly-brokenLock {
+  &:before {
+    content: $iconly-brokenLock; 
+  }
+}
+.iconly-brokenLogin {
+  &:before {
+    content: $iconly-brokenLogin; 
+  }
+}
+.iconly-brokenLogout {
+  &:before {
+    content: $iconly-brokenLogout; 
+  }
+}
+.iconly-brokenMessage {
+  &:before {
+    content: $iconly-brokenMessage; 
+  }
+}
+.iconly-brokenMore-Circle {
+  &:before {
+    content: $iconly-brokenMore-Circle; 
+  }
+}
+.iconly-brokenMore-Square {
+  &:before {
+    content: $iconly-brokenMore-Square; 
+  }
+}
+.iconly-brokenNotification {
+  &:before {
+    content: $iconly-brokenNotification; 
+  }
+}
+.iconly-brokenPaper-Download {
+  &:before {
+    content: $iconly-brokenPaper-Download; 
+  }
+}
+.iconly-brokenPaper-Fail {
+  &:before {
+    content: $iconly-brokenPaper-Fail; 
+  }
+}
+.iconly-brokenPaper-Negative {
+  &:before {
+    content: $iconly-brokenPaper-Negative; 
+  }
+}
+.iconly-brokenPaper-Plus {
+  &:before {
+    content: $iconly-brokenPaper-Plus; 
+  }
+}
+.iconly-brokenPaper-Upload {
+  &:before {
+    content: $iconly-brokenPaper-Upload; 
+  }
+}
+.iconly-brokenPaper {
+  &:before {
+    content: $iconly-brokenPaper; 
+  }
+}
+.iconly-brokenPassword {
+  &:before {
+    content: $iconly-brokenPassword; 
+  }
+}
+.iconly-brokenPlay {
+  &:before {
+    content: $iconly-brokenPlay; 
+  }
+}
+.iconly-brokenPlus {
+  &:before {
+    content: $iconly-brokenPlus; 
+  }
+}
+.iconly-brokenProfile {
+  &:before {
+    content: $iconly-brokenProfile; 
+  }
+}
+.iconly-brokenScan {
+  &:before {
+    content: $iconly-brokenScan; 
+  }
+}
+.iconly-brokenSearch {
+  &:before {
+    content: $iconly-brokenSearch; 
+  }
+}
+.iconly-brokenSend {
+  &:before {
+    content: $iconly-brokenSend; 
+  }
+}
+.iconly-brokenSetting {
+  &:before {
+    content: $iconly-brokenSetting; 
+  }
+}
+.iconly-brokenShield-Done {
+  &:before {
+    content: $iconly-brokenShield-Done; 
+  }
+}
+.iconly-brokenShield-Fail {
+  &:before {
+    content: $iconly-brokenShield-Fail; 
+  }
+}
+.iconly-brokenShow {
+  &:before {
+    content: $iconly-brokenShow; 
+  }
+}
+.iconly-brokenStar {
+  &:before {
+    content: $iconly-brokenStar; 
+  }
+}
+.iconly-brokenSwap {
+  &:before {
+    content: $iconly-brokenSwap; 
+  }
+}
+.iconly-brokenTick-Square {
+  &:before {
+    content: $iconly-brokenTick-Square; 
+  }
+}
+.iconly-brokenTicket-Star {
+  &:before {
+    content: $iconly-brokenTicket-Star; 
+  }
+}
+.iconly-brokenTicket {
+  &:before {
+    content: $iconly-brokenTicket; 
+  }
+}
+.iconly-brokenTime-Circle {
+  &:before {
+    content: $iconly-brokenTime-Circle; 
+  }
+}
+.iconly-brokenTime-Square {
+  &:before {
+    content: $iconly-brokenTime-Square; 
+  }
+}
+.iconly-brokenUnlock {
+  &:before {
+    content: $iconly-brokenUnlock; 
+  }
+}
+.iconly-brokenUpload {
+  &:before {
+    content: $iconly-brokenUpload; 
+  }
+}
+.iconly-brokenVideo {
+  &:before {
+    content: $iconly-brokenVideo; 
+  }
+}
+.iconly-brokenVoice-2 {
+  &:before {
+    content: $iconly-brokenVoice-2; 
+  }
+}
+.iconly-brokenVoice {
+  &:before {
+    content: $iconly-brokenVoice; 
+  }
+}
+.iconly-brokenVolume-Down {
+  &:before {
+    content: $iconly-brokenVolume-Down; 
+  }
+}
+.iconly-brokenVolume-Off {
+  &:before {
+    content: $iconly-brokenVolume-Off; 
+  }
+}
+.iconly-brokenVolume-Up {
+  &:before {
+    content: $iconly-brokenVolume-Up; 
+  }
+}
+.iconly-brokenWallet {
+  &:before {
+    content: $iconly-brokenWallet; 
+  }
+}
+.iconly-brokenWork {
+  &:before {
+    content: $iconly-brokenWork; 
+  }
+}
+
