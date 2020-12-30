@@ -1,13 +1,15 @@
 <!-- SideBarContent.svelte -->
 <script>
     import "./SideBarContent.css";
+    import SideIconButton from "../SideIconButton/SideIconButton.svelte";
 </script>
 
 <style>
 </style>
 
-<div id="side-bar" >
-    <a>A</a>
-    <a>B</a>
-    <a>C</a>
+<div id="side-bar">
+	<SideIconButton />
+	<SideIconButton />
+	<SideIconButton />
+	<SideIconButton />
 </div>

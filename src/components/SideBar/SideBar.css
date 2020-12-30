@@ -5,4 +5,6 @@
     height: calc(100% - 40px);
     width: 65px;
     float: left;
+    overflow: hidden;
+    position: relative;
 }
