@@ -6,9 +6,13 @@
 
 <style>
 </style>
-  
+
+<!-- Top Bar -->
 <TopBar />
 
+<!-- Side Bar -->
 <SideBar />
 
+<!-- Web View -->
 <WebView />
+

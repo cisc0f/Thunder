@@ -8,9 +8,9 @@
 
 <div class="arrows-container">
   <a href="https://www.google.com">
-      <img src="./static/assets/images/left_arrow.png" alt="todo"/>
+    <img src="./static/assets/images/icons/set-iconly2/6 - Svg/Bold/Arrow - Left.svg" alt="todo"/>
   </a>
   <a href="https://www.google.com">
-      <img src="./static/assets/images/right_arrow.png" alt="todo"/>
+    <img src="./static/assets/images/icons/set-iconly2/6 - Svg/Bold/Arrow - Right.svg" alt="todo"/>
   </a>
 </div>
