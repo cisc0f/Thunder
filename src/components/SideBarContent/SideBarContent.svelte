@@ -1,13 +1,13 @@
 <!-- SideBarContent.svelte -->
-<script lang="ts">
+<script>
     import "./SideBarContent.css";
 </script>
 
 <style>
 </style>
 
-<div id="side-bar">
-    <a href="https://www.google.com">A</a>
-    <a href="https://www.google.com">B</a>
-    <a href="https://www.google.com">C</a>
+<div id="side-bar" >
+    <a>A</a>
+    <a>B</a>
+    <a>C</a>
 </div>

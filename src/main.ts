@@ -22,8 +22,8 @@ const createWindow = () => {
       nodeIntegration: true,
       webviewTag: true,
       sandbox: true,
-      enableRemoteModule: false,
-      allowPopups: false,
+      enableRemoteModule: true,
+      allowPopups: true,
     }
   });
 
