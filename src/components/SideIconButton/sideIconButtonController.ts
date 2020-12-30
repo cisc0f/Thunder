@@ -14,11 +14,11 @@ export function setState(e) {
 
     for(var webView of webViews) {
         if(webId == webView.getAttribute("web-id")){
-            webView.classList.add("active");
-            webView.classList.remove("hidden");
+            webView.parentElement.classList.add("active");
+            webView.parentElement.classList.remove("hidden");
         } else {
-            webView.classList.remove("active");
-            webView.classList.add("hidden");
+            webView.parentElement.classList.remove("active");
+            webView.parentElement.classList.add("hidden");
         }
     }
 

@@ -94,9 +94,11 @@ button {
 }
 .active {
   visibility: visible;
+  z-index: 1;
 }
 .hidden {
   visibility: hidden;
+  z-index: -999;
 }
 .offscreen {
   visibility: visible !important;
