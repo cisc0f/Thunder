@@ -1,3 +1,5 @@
+/* Icon Button */
+/* Icon Button */
 .icon-button-container {
     width: 60%;
     height: 60%;
@@ -13,10 +15,9 @@
     outline: none;
     /* Icon background */
     background-image: url("../../public/static/assets/images/icons/icon_default.svg");   
-    background-size:     cover;
-    background-repeat:   no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
-    fill: currentColor;
     color: inherit;
     text-decoration: none;
     cursor: pointer;

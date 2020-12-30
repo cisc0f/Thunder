@@ -1,14 +1,8 @@
-/* WebView */
+/* Web View */
 .webview-container {
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    box-sizing: border-box;
-    height: calc(100% - 40px);
-    width: auto;
-    overflow: hidden;
-}
-  
-.webview {
-    height: 100%;
-    width: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

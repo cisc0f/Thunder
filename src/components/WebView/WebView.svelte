@@ -1,5 +1,6 @@
 <!-- WebView.svelte -->
 <script>
+    import WebViewContent from '../WebViewContent/WebViewContent.svelte';
     import "./WebView.css";
     export let url;
     export let webid;
@@ -9,8 +10,5 @@
 </style>
 
 <div class="webview-container">
-    <webview class="webview" web-id="{webid}" src="{url}">
-        <div class="indicator">
-        </div>
-    </webview>
+    <WebViewContent url={url} webid="{webid}"/>
 </div>

@@ -1,7 +1,6 @@
 /* Top bar */
-@import "/public/static/stylesheets/global.css";
 #top-bar-container {
-    background-color: var(secondary-bg-color);
+    background-color: var(--secondary-bg-color, transparent);
     width: 100%;
     height: 40px;
     -webkit-user-select: none;

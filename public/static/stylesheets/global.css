@@ -2,10 +2,10 @@
 /* MAIN */
 
 /* Colors */
-:root {
+:global(:root) {
   --main-color: rgba(255, 255, 255, 0.2);
   --secondary-color: white;
-  --main-bg-color: rgba(255, 255, 255, 0.3);
+  --main-bg-color: rgba(255, 255, 255, 0.2);
   --secondary-bg-color: transparent;
   /* Fonts */
   --main-font-size: 16px;
@@ -19,6 +19,8 @@ html {
   /* Fonts */
   font-size: var(main-font-size);
   font-weight: normal;
+  min-height: 100%;
+  font-family: sans-serif;
   /* Layout */
   padding: 0;
   margin: 0;
@@ -26,7 +28,7 @@ html {
   overflow-wrap: break-word;
   scroll-behavior: smooth;
   /* Colors */
-  background-color: var(main-bg-color) !important;
+  background-color: var(--main-bg-color) !important;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -36,7 +38,7 @@ body {
   margin: 0;
   background-color: transparent;
   box-sizing: border-box;
-  font-family: var(main-font-family);
+  font-family: var(--main-font-family);
   /* Avoid x scroll */
   overflow-x: hidden;
 }
@@ -46,6 +48,10 @@ body {
 /* + + + TAGS + + + */
 h1 {
   color: white;
+}
+
+button {
+  background-color: var(--secondary-bg-color) !important;
 }
 /* + + + TAGS + + + */
 
@@ -58,6 +64,34 @@ h1 {
 
 
 /* + + + CLASSES + + + */
+/* Main Content */
+.content {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 65px;
+  right: 0;
+  flex: 1 1;
+  display: flex;
+  background-color: #484B5B;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 160px 160px;
+  border-radius: 25px 0px 0px 20px; /* TL TR BR BL */
+}
+.content div, .content webview {
+  border-radius: 25px 0px 0px 20px; /* TL TR BR BL */
+}
+
+/* Visibility of Webviews */
+.webviews-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
 .active {
   visibility: visible;
 }
@@ -67,5 +101,5 @@ h1 {
 .offscreen {
   visibility: visible !important;
   z-index: -999;
-}  
+}
 /* + + + CLASSES + + + */
