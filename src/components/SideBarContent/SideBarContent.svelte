@@ -8,8 +8,8 @@
 </style>
 
 <div id="side-bar">
-	<SideIconButton />
-	<SideIconButton />
-	<SideIconButton />
-	<SideIconButton />
+	<SideIconButton webid={"23d"} />
+	<SideIconButton webid={"24d"} />
+	<SideIconButton webid={"25d"} />
+	<SideIconButton webid={"26d"} />
 </div>
