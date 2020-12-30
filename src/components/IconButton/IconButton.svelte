@@ -6,6 +6,6 @@
 </style>
 
 <div class="icon-button-container">
-    <a class="icon-button" href="https://www.google.com">
-    </a>
+    <button class="icon-button">
+    </button>
 </div>

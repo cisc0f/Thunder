@@ -1,4 +1,5 @@
-/* Side Bar Content */
+@import "/public/static/stylesheets/global.css";
+/* Side Icon Button */
 .side-icon-button {
     width: auto;
     height: 65px;
@@ -18,5 +19,5 @@
 
 .side-icon-button:hover {
     color: white;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(main-bg-color, rgba(255, 255, 255, 0.2));
 }
