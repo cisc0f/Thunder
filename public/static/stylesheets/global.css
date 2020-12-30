@@ -58,5 +58,14 @@ h1 {
 
 
 /* + + + CLASSES + + + */
-
+.active {
+  visibility: visible;
+}
+.hidden {
+  visibility: hidden;
+}
+.offscreen {
+  visibility: visible !important;
+  z-index: -999;
+}  
 /* + + + CLASSES + + + */
