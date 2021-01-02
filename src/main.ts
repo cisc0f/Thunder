@@ -1,4 +1,4 @@
-const { app, BrowserView, BrowserWindow } = require('electron');
+const { app, BrowserWindow, globalShortcut } = require('electron');
 const path = require('path');
 
 // DEV MODE ONLY
@@ -12,11 +12,20 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 }
 
 const createWindow = () => {
+
+  // Get screen size
+  const { screen } = require('electron');
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize
+
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1200,
-    height: 1000,
-	  titleBarStyle: 'hiddenInset',
+    width: width,
+    height: height,
+    titleBarStyle: 'hidden',
+    trafficLightPosition: {
+      x:15,
+      y:25
+    },
     vibrancy: 'hud',
     webPreferences: {
       nodeIntegration: true,
@@ -26,15 +35,22 @@ const createWindow = () => {
       allowPopups: true,
     }
   });
+  
+  // Keyboard shortcuts registering
+  globalShortcut.register('CommandOrControl+Left', () => {
+    mainWindow.setSize(65, height, process.platform == 'darwin' ? true : false);
+    mainWindow.setTrafficLightPosition({x:6, y:25});
+  })
+  globalShortcut.register('CommandOrControl+Right', () => {
+    mainWindow.setSize(width, height, process.platform == 'darwin' ? true : false);
+    mainWindow.setTrafficLightPosition({x:15, y:25});
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, '../public/index.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
-
-  // Maximize window
-  mainWindow.maximize()
 
 };
 

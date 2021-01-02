@@ -77,10 +77,10 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 160px 160px;
-  border-radius: 25px 0px 0px 20px; /* TL TR BR BL */
+  border-radius: 20px 0px 0px 20px; /* TL TR BR BL */
 }
 .content div, .content webview {
-  border-radius: 25px 0px 0px 20px; /* TL TR BR BL */
+  border-radius: 20px 0px 0px 20px; /* TL TR BR BL */
 }
 
 /* Visibility of Webviews */

@@ -1,6 +1,6 @@
 import { check_outros } from "svelte/internal";
 
-// Set state of webview based on button clicked (active, hidden, offscreen)
+// Set state of webview based on button clicked (active, hidden)
 export function setState(e) {
 
     var webId = "";

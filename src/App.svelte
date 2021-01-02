@@ -16,9 +16,9 @@
 <!-- Web Views -->
 <main class="content">
 	<div class="webviews-container">
-		<WebView url={"https://www.medium.com"} webid={"23d"} />
-		<WebView url={"https://www.google.com"} webid={"24d"} />
-		<WebView url={"https://www.youtube.com"} webid={"25d"} />
-		<WebView url={"https://www.instagram.com"} webid={"26d"} />
+		<WebView url={"https://www.medium.com"} webid={"23d"} class="active" />
+		<WebView url={"https://www.google.com"} webid={"24d"} class="hidden" />
+		<WebView url={"https://www.youtube.com"} webid={"25d"} class="hidden" />
+		<WebView url={"https://www.instagram.com"} webid={"26d"} class="hidden" />
 	</div>
 </main>
