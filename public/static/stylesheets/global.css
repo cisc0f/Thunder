@@ -1,23 +1,34 @@
-@charset "UTF-8";
 /* MAIN */
+@charset "UTF-8";
+
+
 
 /* Colors */
 :global(:root) {
+  /* Appearance */
   --main-color: rgba(255, 255, 255, 0.2);
   --secondary-color: white;
   --main-bg-color: rgba(255, 255, 255, 0.2);
   --secondary-bg-color: transparent;
+  --side-button-border-radius: 15px;
+  --top-button-border-radius: 15px;
   /* Fonts */
   --main-font-size: 16px;
   --main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --header1-font-size: 32px;
   --header2-font-size: 24px;
   --header-font-family: Arial, sans-serif;
+  /* Layout */
+  --topbar-height: 40px;
+  --sidebar-width: 65px;
 }
 
+
+
+/* Main Tags */
 html {
   /* Fonts */
-  font-size: var(main-font-size);
+  font-size: var(--main-font-size);
   font-weight: normal;
   min-height: 100%;
   font-family: sans-serif;
@@ -52,6 +63,9 @@ h1 {
 
 button {
   background-color: var(--secondary-bg-color) !important;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 /* + + + TAGS + + + */
 
@@ -92,9 +106,13 @@ button {
   overflow: hidden;
   flex-direction: column;
 }
+
 .active {
   visibility: visible;
   z-index: 1;
+}
+.active .side-icon-button {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .hidden {
   visibility: hidden;

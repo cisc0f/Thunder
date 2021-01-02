@@ -7,6 +7,6 @@
 <style>
 </style>
 
-<div id="top-bar-container">
+<div id="topbar-container">
     <TopBarContent />
 </div>

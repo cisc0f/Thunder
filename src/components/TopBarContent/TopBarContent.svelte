@@ -1,17 +1,38 @@
 <!-- TopBarContent.svelte -->
 <script>
     import "./TopBarContent.css";
-    import { goForward, goBackward } from "./topBarContentController.ts";
+    import { goForward, goBackward, reloadPage } from "./topBarContentController.ts";
+    import { faSyncAlt, faArrowLeft, faArrowRight, faPlus } from '@fortawesome/free-solid-svg-icons';
+    import TopOptionButton from '../TopOptionButton/TopOptionButton.svelte';
 </script>
 
 <style>
 </style>
 
-<div class="arrows-container">
-  <a on:click={goBackward} href={"#"}>
-    <img src="./static/assets/images/icons/set-iconly2/6 - Svg/Bold/Arrow - Left.svg" alt="todo"/>
-  </a>
-  <a on:click={goForward} href={"#"}>
-    <img src="./static/assets/images/icons/set-iconly2/6 - Svg/Bold/Arrow - Right.svg" alt="todo"/>
-  </a>
+<!-- Left Options -->
+<div class="left-options-container">
+  <!-- Nav Options -->
+  <TopOptionButton icon={faArrowLeft} on:click={goBackward}/>
+  <TopOptionButton icon={faArrowRight} on:click={goForward}/>
+
+  <!-- Refresh Page -->
+  <TopOptionButton icon={faSyncAlt} on:click={reloadPage}/>
+  
+  <!-- Add Tab -->
+  <TopOptionButton icon={faPlus}/>
+</div>
+
+
+<!-- Tabs Space -->
+<div class="tabs-container">
+  <div>
+    Tab
+  </div>
+</div>
+
+
+<!-- Right Options -->
+<div class="right-options-container">
+  <!-- Extensions -->
+  <TopOptionButton icon={faSyncAlt} />
 </div>

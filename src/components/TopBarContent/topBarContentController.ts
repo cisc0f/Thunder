@@ -11,3 +11,10 @@ export function goBackward() {
     //@ts-ignore
     webViewContainer.goBack();
 }
+
+// Reload Controller
+export function reloadPage() {
+    const webViewContainer = document.querySelector('.active').firstChild;
+    //@ts-ignore
+    webViewContainer.reload();
+}
