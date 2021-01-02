@@ -1,5 +1,5 @@
 <!-- SideBar.svelte -->
-<script lang="ts">
+<script>
     import SideBarContent from '../SideBarContent/SideBarContent.svelte';
     import "./SideBar.css";
 </script>

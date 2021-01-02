@@ -1,21 +1,22 @@
 /* Top Bar Content */
-.arrows-container {
-    height: auto;
-    padding-left: 85px;
-}
-
-.arrows-container a {
-    height: 40px;
+.left-options-container {
     width: auto;
+    height: var(--topbar-height, 40px);
     display: inline-block;
-    margin-left: 10px;
+    padding-left: 20px;
 }
 
-.arrows-container a img {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.right-options-container {
+    width: auto;
+    height: var(--topbar-height, 40px);
+    display: inline-block;
+}
+
+.tabs-container {
+    height: var(--topbar-height, 40px);
+    width: calc(100% - 305px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
