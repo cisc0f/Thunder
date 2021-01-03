@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
     import "./IconButton.css";
-    export let webid;
+    export let webid: string;
 </script>
 
 <style>

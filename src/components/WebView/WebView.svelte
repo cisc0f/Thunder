@@ -1,11 +1,11 @@
 <!-- WebView.svelte -->
-<script>
+<script lang="ts">
     import WebViewContent from '../WebViewContent/WebViewContent.svelte';
     import "./WebView.css";
-    let state = ""
+    let state: string = ""
     export { state as class }
-    export let url;
-    export let webid;
+    export let url: string;
+    export let webid: string;
     
 </script>
 

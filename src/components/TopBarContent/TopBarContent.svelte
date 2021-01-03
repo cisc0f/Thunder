@@ -1,7 +1,7 @@
 <!-- TopBarContent.svelte -->
-<script>
+<script lang="ts">
     import "./TopBarContent.css";
-    import { goForward, goBackward, reloadPage } from "./topBarContentController.ts";
+    import { goForward, goBackward, reloadPage } from "./topBarContentController";
     import { faSyncAlt, faArrowLeft, faArrowRight, faPlus } from '@fortawesome/free-solid-svg-icons';
     import TopOptionButton from '../TopOptionButton/TopOptionButton.svelte';
 </script>

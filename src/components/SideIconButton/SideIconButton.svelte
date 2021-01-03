@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import "./SideIconButton.css";
     import IconButton from "../IconButton/IconButton.svelte";
-    import { setState } from "./sideIconButtonController.ts";
-    export let webid;
+    import { setState } from "./sideIconButtonController";
+    export let webid: string;
 </script>
 
 <style>

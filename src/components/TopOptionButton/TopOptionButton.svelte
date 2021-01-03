@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
     import "./TopOptionButton.css";
     import OptionButton from "../OptionButton/OptionButton.svelte";
-    export let icon;
+    import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+    export let icon: IconDefinition;
 </script>
 
 <style>

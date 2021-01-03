@@ -37,11 +37,15 @@ const createWindow = () => {
   });
   
   // Keyboard shortcuts registering
-  globalShortcut.register('CommandOrControl+Left', () => {
+  globalShortcut.register('Alt+CommandOrControl+Left', () => {
+    mainWindow.setBounds({x:0, y:0})
+    mainWindow.show();
     mainWindow.setSize(65, height, process.platform == 'darwin' ? true : false);
     mainWindow.setTrafficLightPosition({x:6, y:25});
   })
-  globalShortcut.register('CommandOrControl+Right', () => {
+  globalShortcut.register('Alt+CommandOrControl+Right', () => {
+    mainWindow.setBounds({x:0, y:0})
+    mainWindow.show();
     mainWindow.setSize(width, height, process.platform == 'darwin' ? true : false);
     mainWindow.setTrafficLightPosition({x:15, y:25});
   })

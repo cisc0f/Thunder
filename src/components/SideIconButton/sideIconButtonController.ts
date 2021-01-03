@@ -3,8 +3,8 @@ import { check_outros } from "svelte/internal";
 // Set state of webview based on button clicked (active, hidden)
 export function setState(e) {
 
-    var webId = "";
-    var webViews = document.getElementsByTagName('webview');
+    var webId: String = "";
+    var webViews: HTMLCollectionOf<Element> = document.getElementsByClassName('view');
 
     if(e.srcElement.tagName != "BUTTON"){
         webId = e.srcElement.querySelector(".icon-button").getAttribute("web-id");
@@ -13,7 +13,10 @@ export function setState(e) {
     }
 
     for(var webView of webViews) {
-        if(webId == webView.getAttribute("web-id")){
+        //@ts-ignore
+        var selectedId: String = webView.children.getAttribute("web-id")
+
+        if(webId == selectedId){
             webView.parentElement.classList.add("active");
             webView.parentElement.classList.remove("hidden");
         } else {
@@ -21,6 +24,5 @@ export function setState(e) {
             webView.parentElement.classList.add("hidden");
         }
     }
-
-   
+        
 }

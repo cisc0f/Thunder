@@ -1,14 +1,12 @@
 <!-- WebViewContent.svelte -->
-<script>
+<script lang="ts">
     import "./WebViewContent.css";
-    export let url;
-    export let webid;
+    export let url: string;
+    export let webid: string;
 </script>
 
 <style>
 </style>
 
 <webview class="webview" id="webview" src="{url}" web-id="{webid}">
-    <div class="indicator">
-    </div>
 </webview>
