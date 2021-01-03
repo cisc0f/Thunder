@@ -1,10 +1,10 @@
 import { check_outros } from "svelte/internal";
 
-// Set state of webview based on button clicked (active, hidden)
+// Set state of a view based on button clicked (active, hidden)
 export function setState(e) {
 
     var webId = "";
-    var webViews = document.getElementsByTagName('webview');
+    var views = document.getElementsByClassName('view');
 
     if(e.srcElement.tagName != "BUTTON"){
         webId = e.srcElement.querySelector(".icon-button").getAttribute("web-id");
@@ -12,13 +12,14 @@ export function setState(e) {
         webId = e.srcElement.getAttribute("web-id");
     }
 
-    for(var webView of webViews) {
-        if(webId == webView.getAttribute("web-id")){
-            webView.parentElement.classList.add("active");
-            webView.parentElement.classList.remove("hidden");
+    for(var view of views) {
+        //@ts-ignore
+        if(webId == view.firstChild.getAttribute("web-id")){
+            view.classList.add("active");
+            view.classList.remove("hidden");
         } else {
-            webView.parentElement.classList.remove("active");
-            webView.parentElement.classList.add("hidden");
+            view.classList.remove("active");
+            view.classList.add("hidden");
         }
     }
 

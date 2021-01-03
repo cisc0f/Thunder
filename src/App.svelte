@@ -2,6 +2,7 @@
 	import TopBar from "./components/TopBar/TopBar.svelte";
 	import SideBar from "./components/SideBar/SideBar.svelte";
 	import WebView from "./components/WebView/WebView.svelte";
+	import SettingsView from "./components/SettingsView/SettingsView.svelte";
 </script>
 
 <style>
@@ -13,12 +14,16 @@
 <!-- Side Bar -->
 <SideBar />
 
-<!-- Web Views -->
+<!-- Views -->
 <main class="content">
-	<div class="webviews-container">
-		<WebView url={"https://www.medium.com"} webid={"23d"} class="active" />
-		<WebView url={"https://www.google.com"} webid={"24d"} class="hidden" />
-		<WebView url={"https://www.youtube.com"} webid={"25d"} class="hidden" />
-		<WebView url={"https://www.instagram.com"} webid={"26d"} class="hidden" />
+	<div class="views-container">
+		<WebView url={"https://www.medium.com"} webid={"23d"} class="active view" />
+		<WebView url={"https://www.google.com"} webid={"24d"} class="hidden view" />
+		<WebView url={"https://www.youtube.com"} webid={"25d"} class="hidden view" />
+		<WebView url={"https://www.instagram.com"} webid={"26d"} class="hidden view" />
+		<WebView url={"https://trello.com/b/uYI2QjGr/thunder"} webid={"21d"} class="hidden view" />
+		
+		<!-- Settings -->
+		<SettingsView webid={"settings"} class="hidden view" />
 	</div>
 </main>
