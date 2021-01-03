@@ -1,21 +1,26 @@
 /* Top Bar Content */
-.arrows-container {
-    height: auto;
-    padding-left: 85px;
-}
-
-.arrows-container a {
-    height: 40px;
+.left-options-container {
     width: auto;
+    height: 34px;
     display: inline-block;
-    margin-left: 10px;
+    padding-left: 20px;
+    vertical-align: middle;
+    border-right: 0.005rem rgba(255, 255, 255, 0.3) solid;
 }
 
-.arrows-container a img {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.right-options-container {
+    width: auto;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tabs-container {
+    height: var(--topbar-height, 40px);
+    width: calc(100% - 305px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
 }

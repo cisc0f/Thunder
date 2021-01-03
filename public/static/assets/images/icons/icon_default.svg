@@ -1,0 +1,13 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="white" d="m7,17a5,5 0 0 1 0,-10l3,0a5,5 0 0 1 5,5a1,1 0 0 1 -2,0a3,3 0 0 0 -3,-3l-3,0a3,3 0 0 0 0,6a1,1 0 0 1 0,2z"/>
+  <path id="svg_2" fill="white" d="m17,17l-3,0a5,5 0 0 1 -5,-5a1,1 0 0 1 2,0a3,3 0 0 0 3,3l3,0a3,3 0 0 0 0,-6a1,1 0 0 1 0,-2a5,5 0 0 1 0,10z"/>
+ </g>
+</svg>

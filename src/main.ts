@@ -1,4 +1,4 @@
-const { app, BrowserView, BrowserWindow } = require('electron');
+const { app, BrowserWindow, globalShortcut } = require('electron');
 const path = require('path');
 
 // DEV MODE ONLY
@@ -12,29 +12,48 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 }
 
 const createWindow = () => {
+
+  // Get screen size
+  const { screen } = require('electron');
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize
+
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1200,
-    height: 1000,
-	  titleBarStyle: 'hiddenInset',
-    vibrancy: 'hud',
+    width: width,
+    height: height,
+    titleBarStyle: 'hidden',
+    trafficLightPosition: {
+      x:15,
+      y:25
+    },
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true,
       sandbox: true,
-      enableRemoteModule: false,
-      allowPopups: false,
+      enableRemoteModule: true,
+      allowPopups: true,
     }
   });
+  
+  // Keyboard shortcuts registering
+  globalShortcut.register('Alt+CommandOrControl+Left', () => {
+    mainWindow.setBounds({x:0, y:0})
+    mainWindow.show();
+    mainWindow.setSize(65, height, process.platform == 'darwin' ? true : false);
+    mainWindow.setTrafficLightPosition({x:6, y:25});
+  })
+  globalShortcut.register('Alt+CommandOrControl+Right', () => {
+    mainWindow.setBounds({x:0, y:0})
+    mainWindow.show();
+    mainWindow.setSize(width, height, process.platform == 'darwin' ? true : false);
+    mainWindow.setTrafficLightPosition({x:15, y:25});
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, '../public/index.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
-
-  // Maximize window
-  mainWindow.maximize()
 
 };
 

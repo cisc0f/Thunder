@@ -1,24 +1,37 @@
-@charset "UTF-8";
 /* MAIN */
+@charset "UTF-8";
+
+
 
 /* Colors */
-:root {
+:global(:root) {
+  /* Appearance */
   --main-color: rgba(255, 255, 255, 0.2);
   --secondary-color: white;
-  --main-bg-color: rgba(255, 255, 255, 0.3);
+  --main-bg-color: rgba(255, 255, 255, 0.2);
   --secondary-bg-color: transparent;
+  --side-button-border-radius: 15px;
+  --top-button-border-radius: 15px;
   /* Fonts */
   --main-font-size: 16px;
   --main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --header1-font-size: 32px;
   --header2-font-size: 24px;
   --header-font-family: Arial, sans-serif;
+  /* Layout */
+  --topbar-height: 40px;
+  --sidebar-width: 65px;
 }
 
+
+
+/* Main Tags */
 html {
   /* Fonts */
-  font-size: var(main-font-size);
+  font-size: var(--main-font-size);
   font-weight: normal;
+  min-height: 100%;
+  font-family: sans-serif;
   /* Layout */
   padding: 0;
   margin: 0;
@@ -26,7 +39,7 @@ html {
   overflow-wrap: break-word;
   scroll-behavior: smooth;
   /* Colors */
-  background-color: var(main-bg-color) !important;
+  background-color: var(--main-bg-color) !important;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -34,9 +47,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: transparent;
+  background-color: #343434; /*Side and Top Bar Color*/
   box-sizing: border-box;
-  font-family: var(main-font-family);
+  font-family: var(--main-font-family);
   /* Avoid x scroll */
   overflow-x: hidden;
 }
@@ -46,6 +59,13 @@ body {
 /* + + + TAGS + + + */
 h1 {
   color: white;
+}
+
+button {
+  background-color: var(--secondary-bg-color) !important;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 /* + + + TAGS + + + */
 
@@ -58,5 +78,48 @@ h1 {
 
 
 /* + + + CLASSES + + + */
+/* Main Content */
+.content {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 65px;
+  right: 0;
+  flex: 1 1;
+  display: flex;
+  background-color: #232020;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 160px 160px;
+  border-radius: 20px 0px 0px 20px; /* TL TR BR BL */
+}
+.content div, .content webview {
+  border-radius: 20px 0px 0px 20px; /* TL TR BR BL */
+}
 
+/* Visibility of Views */
+.views-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.active {
+  visibility: visible;
+  z-index: 1;
+}
+.active .side-icon-button {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.hidden {
+  visibility: hidden;
+  z-index: -999;
+}
+.offscreen {
+  visibility: visible !important;
+  z-index: -999;
+}
 /* + + + CLASSES + + + */

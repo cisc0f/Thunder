@@ -1,13 +1,13 @@
-/* Side Bar Content */
+/* Side Icon Button */
 .side-icon-button {
     width: auto;
-    height: 65px;
+    height: var(--sidebar-width, 65px);
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     transition: 0.1s ease-in-out;
     -webkit-app-region: no-drag;
-    border-radius: 10px;
+    border-radius: var(--side-button-border-radius, 15px);
     margin: 0 3px;
     
     display: flex;
@@ -17,6 +17,9 @@
 }
 
 .side-icon-button:hover {
-    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.side-icon-button.active {
     background-color: rgba(255, 255, 255, 0.2);
 }

@@ -1,9 +1,9 @@
 /* Side Bar */
-#side-bar-container {
+#sidebar-container {
     box-sizing: border-box;
     background-color: transparent;
-    height: calc(100% - 40px);
-    width: 65px;
+    height: calc(100% - var(--topbar-height, 40px));
+    width: var(--sidebar-width, 65px);
     float: left;
     overflow: hidden;
     position: relative;
