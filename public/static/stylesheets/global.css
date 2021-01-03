@@ -47,7 +47,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: transparent;
+  background-color: #343434; /*Side and Top Bar Color*/
   box-sizing: border-box;
   font-family: var(--main-font-family);
   /* Avoid x scroll */
@@ -87,7 +87,7 @@ button {
   right: 0;
   flex: 1 1;
   display: flex;
-  background-color: #484B5B;
+  background-color: #232020;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 160px 160px;

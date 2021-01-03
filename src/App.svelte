@@ -17,13 +17,13 @@
 <!-- Views -->
 <main class="content">
 	<div class="views-container">
-		<WebView url={"https://www.medium.com"} webid={"23d"} class="active view" />
-		<WebView url={"https://www.google.com"} webid={"24d"} class="hidden view" />
-		<WebView url={"https://www.youtube.com"} webid={"25d"} class="hidden view" />
-		<WebView url={"https://www.instagram.com"} webid={"26d"} class="hidden view" />
-		<WebView url={"https://trello.com/b/uYI2QjGr/thunder"} webid={"21d"} class="hidden view" />
+		<WebView url={"https://www.medium.com"} webid={"23d"} class="active" />
+		<WebView url={"https://www.google.com"} webid={"24d"} class="hidden" />
+		<WebView url={"https://www.youtube.com"} webid={"25d"} class="hidden" />
+		<WebView url={"https://www.instagram.com"} webid={"26d"} class="hidden" />
+		<WebView url={"https://trello.com/login"} webid={"21d"} class="hidden" />
 		
 		<!-- Settings -->
-		<SettingsView webid={"settings"} class="hidden view" />
+		<SettingsView webid={"settings"} class="hidden" />
 	</div>
 </main>

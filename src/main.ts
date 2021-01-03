@@ -26,7 +26,6 @@ const createWindow = () => {
       x:15,
       y:25
     },
-    vibrancy: 'hud',
     webPreferences: {
       nodeIntegration: true,
       webviewTag: true,
