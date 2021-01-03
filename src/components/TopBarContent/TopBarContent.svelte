@@ -2,7 +2,7 @@
 <script>
     import "./TopBarContent.css";
     import { goForward, goBackward, reloadPage } from "./topBarContentController.ts";
-    import { faSyncAlt, faArrowLeft, faArrowRight, faPlus } from '@fortawesome/free-solid-svg-icons';
+    import { faSyncAlt, faArrowLeft, faArrowRight, faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
     import TopOptionButton from '../TopOptionButton/TopOptionButton.svelte';
 </script>
 
@@ -17,14 +17,14 @@
 
   <!-- Refresh Page -->
   <TopOptionButton icon={faSyncAlt} on:click={reloadPage}/>
-  
-  <!-- Add Tab -->
-  <TopOptionButton icon={faPlus}/>
 </div>
 
 
 <!-- Tabs Space -->
 <div class="tabs-container">
+    
+  <!-- Add Tab -->
+  <TopOptionButton icon={faPlus}/>
   <div>
     Tab
   </div>
@@ -34,5 +34,5 @@
 <!-- Right Options -->
 <div class="right-options-container">
   <!-- Extensions -->
-  <TopOptionButton icon={faSyncAlt} />
+  <TopOptionButton icon={faSearch} />
 </div>

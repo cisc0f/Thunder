@@ -5,6 +5,7 @@
     display: inline-block;
     padding-left: 20px;
     vertical-align: middle;
+    border-right: 0.005rem rgba(255, 255, 255, 0.3) solid;
 }
 
 .right-options-container {

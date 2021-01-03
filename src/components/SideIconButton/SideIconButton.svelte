@@ -3,7 +3,7 @@
     import IconButton from "../IconButton/IconButton.svelte";
     import { setState } from "./sideIconButtonController.ts";
     export let webid;
-    export let image_url = "../../public/static/assets/images/icons/icon_default.svg";
+    export let image_url;
 </script>
 
 <style>

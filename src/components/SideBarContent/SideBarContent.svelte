@@ -9,15 +9,26 @@
 
 <div id="side-bar">
 	<!-- Search Button -->
-	<SideIconButton webid={"search"} />
+	<div class="top-sidebar">
+		<SideIconButton webid={"account_1"} image_url={"../../public/static/assets/images/icons/icon_account.svg"} />
+	</div>
 
 	<!-- Application View Icons -->
-	<SideIconButton webid={"23d"} />
-	<SideIconButton webid={"24d"} />
-	<SideIconButton webid={"25d"} />
-	<SideIconButton webid={"26d"} />
-	<SideIconButton webid={"21d"} />
+	<div class="center-sidebar">
+		<SideIconButton webid={"23d"} />
+		<SideIconButton webid={"24d"} />
+		<SideIconButton webid={"25d"} />
+		<SideIconButton webid={"26d"} />
+		<SideIconButton webid={"21d"} />
+		<SideIconButton webid={"29d"} />
+		<SideIconButton webid={"28d"} />
+		<SideIconButton webid={"27d"} />
+		<SideIconButton webid={"2d"} />
+		<SideIconButton webid={"1d"} />
+	</div>
 
 	<!-- Settings Button -->
-	<SideIconButton webid={"settings"} image_url={"../../public/static/assets/images/icons/icon_settings.svg"}/>
+	<div class="bottom-sidebar">
+		<SideIconButton webid={"settings"} image_url={"../../public/static/assets/images/icons/icon_settings.svg"} />
+	</div>
 </div>
