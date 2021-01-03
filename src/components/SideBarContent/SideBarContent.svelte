@@ -15,7 +15,7 @@
 
 	<!-- Application View Icons -->
 	<div class="center-sidebar">
-		<SideIconButton webid={"23d"} />
+		<SideIconButton webid={"23d"} class="active"/>
 		<SideIconButton webid={"24d"} />
 		<SideIconButton webid={"25d"} />
 		<SideIconButton webid={"26d"} />

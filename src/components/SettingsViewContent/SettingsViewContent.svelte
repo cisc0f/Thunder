@@ -1,8 +1,8 @@
 <!-- SettingsViewContent.svelte -->
-<script>
+<script lang="ts">
     import "./SettingsViewContent.css";
     import Grid from '../Grid/Grid.svelte';
-    export let webid;
+    export let webid: string;
 </script>
 
 <style>

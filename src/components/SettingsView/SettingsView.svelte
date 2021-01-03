@@ -1,11 +1,10 @@
 <!-- SettingsView.svelte -->
-<script>
+<script lang="ts">
     import SettingsViewContent from '../SettingsViewContent/SettingsViewContent.svelte';
     import "./SettingsView.css";
-    let state = ""
+    let state: string = ""
     export { state as class }
-    export let webid;
-    
+    export let webid: string;
 </script>
 
 <style>

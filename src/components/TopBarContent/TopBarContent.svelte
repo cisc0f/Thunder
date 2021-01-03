@@ -1,8 +1,8 @@
 <!-- TopBarContent.svelte -->
-<script>
+<script lang="ts">
     import "./TopBarContent.css";
-    import { goForward, goBackward, reloadPage } from "./topBarContentController.ts";
-    import { faSyncAlt, faArrowLeft, faArrowRight, faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
+    import { goForward, goBackward, reloadPage } from "./topBarContentController";
+    import { faSyncAlt, faArrowLeft, faArrowRight, faPlus, faSearch, faUserCircle } from '@fortawesome/free-solid-svg-icons';
     import TopOptionButton from '../TopOptionButton/TopOptionButton.svelte';
 </script>
 
@@ -35,4 +35,5 @@
 <div class="right-options-container">
   <!-- Extensions -->
   <TopOptionButton icon={faSearch} />
+  <TopOptionButton icon={faUserCircle} />
 </div>

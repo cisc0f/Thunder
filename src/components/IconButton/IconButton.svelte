@@ -1,6 +1,6 @@
-<script>
-    export let webid;
-    export let image_url = "../../public/static/assets/images/icons/icon_default.svg";
+<script lang="ts">
+    export let webid: string;
+    export let image_url: string = "../../public/static/assets/images/icons/icon_default.svg";
 </script>
 
 <style>
