@@ -1,15 +1,17 @@
 /* Top Bar Content */
 .left-options-container {
     width: auto;
-    height: var(--topbar-height, 40px);
+    height: 34px;
     display: inline-block;
     padding-left: 20px;
+    vertical-align: middle;
 }
 
 .right-options-container {
     width: auto;
-    height: var(--topbar-height, 40px);
+    height: 34px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .tabs-container {
@@ -19,4 +21,5 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    color: white;
 }
