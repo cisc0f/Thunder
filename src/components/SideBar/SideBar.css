@@ -1,5 +1,5 @@
 /* Side Bar */
-#side-bar-container {
+#sidebar-container {
     box-sizing: border-box;
     background-color: transparent;
     height: calc(100% - var(--topbar-height, 40px));

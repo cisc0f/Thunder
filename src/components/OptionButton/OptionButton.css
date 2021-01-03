@@ -19,3 +19,8 @@
     height: 100%;
 }
 
+.option-button-icon svg {
+    vertical-align: bottom;
+    color: white;
+}
+

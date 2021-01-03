@@ -7,6 +7,6 @@
 <style>
 </style>
 
-<div id="side-bar-container">
+<div id="sidebar-container">
     <SideBarContent />
 </div>
