@@ -1,8 +1,8 @@
 {
   "name": "thunder",
-  "productName": "thunder",
+  "productName": "Thunder",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A bespoke browser for productivity",
   "main": "src/main.ts",
   "scripts": {
     "start": "concurrently \"npm:svelte-dev\" \"electron-forge start\"",
@@ -26,12 +26,21 @@
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
+          "platforms": [
+            "win32"
+          ],
           "config": {
-            "name": "thunder"
+            "name": "Thunder",
+            "certificateFile": "./cert.pfx",
+            "certificatePassword": "tmpPassword"
           }
         },
         {
           "name": "@electron-forge/maker-zip",
+          "platforms": []
+        },
+        {
+          "name": "@electron-forge/maker-dmg",
           "platforms": [
             "darwin"
           ]
@@ -58,6 +67,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.54",
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",

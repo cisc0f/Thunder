@@ -19,7 +19,7 @@
 }
 
 .center-sidebar {
-    height: calc(100% - 134px);
+    height: calc(100% - 225px);
     overflow-y: scroll;
     min-height: fit-content;
     -webkit-app-region: no-drag;

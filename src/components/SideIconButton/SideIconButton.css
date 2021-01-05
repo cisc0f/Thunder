@@ -7,8 +7,8 @@
     cursor: pointer;
     transition: 0.1s ease-in-out;
     -webkit-app-region: no-drag;
-    border-radius: var(--side-button-border-radius, 15px);
-    margin: 0 3px;
+    border-radius: var(--side-button-border-radius, 10px);
+    margin: 5px 5px;
     
     display: flex;
     justify-content: center;

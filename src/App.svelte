@@ -11,6 +11,8 @@
 <!-- Top Bar -->
 <TopBar />
 
+<span class="progress-indicator"></span> 
+
 <!-- Side Bar -->
 <SideBar />
 
@@ -21,7 +23,7 @@
 		<SettingsView webid={"account_1"} class="hidden" />
 
 		<!-- Web/App Views -->
-		<WebView url={"https://www.medium.com"} webid={"23d"} class="active" />
+		<WebView url={"https://www.medium.com"} webid={"23d"} class="active"/>
 		<WebView url={"https://www.google.com"} webid={"24d"} class="hidden" />
 		<WebView url={"https://www.youtube.com"} webid={"25d"} class="hidden" />
 		<WebView url={"https://www.instagram.com"} webid={"26d"} class="hidden" />
@@ -35,4 +37,6 @@
 		<!-- Settings -->
 		<SettingsView webid={"settings"} class="hidden" />
 	</div>
+	
 </main>
+
