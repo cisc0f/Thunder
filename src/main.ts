@@ -27,26 +27,34 @@ const createWindow = () => {
       y:25
     },
     webPreferences: {
-      nodeIntegration: true,
+      nodeIntegration: false,
+      nodeIntegrationInWorker: false,
+      nodeIntegrationInSubFrames: false,
+      contextIsolation: true,
       webviewTag: true,
       sandbox: true,
-      enableRemoteModule: true,
+      enableRemoteModule: false,
       allowPopups: true,
     }
   });
+
   
   // Keyboard shortcuts registering
   globalShortcut.register('Alt+CommandOrControl+Left', () => {
     mainWindow.setBounds({x:0, y:0})
     mainWindow.show();
     mainWindow.setSize(65, height, process.platform == 'darwin' ? true : false);
-    mainWindow.setTrafficLightPosition({x:6, y:25});
+    if(process.platform == 'darwin'){
+      mainWindow.setTrafficLightPosition({x:6, y:25});
+    }
   })
   globalShortcut.register('Alt+CommandOrControl+Right', () => {
     mainWindow.setBounds({x:0, y:0})
     mainWindow.show();
     mainWindow.setSize(width, height, process.platform == 'darwin' ? true : false);
-    mainWindow.setTrafficLightPosition({x:15, y:25});
+    if(process.platform == 'darwin') {
+      mainWindow.setTrafficLightPosition({x:15, y:25});
+    }
   })
 
   // and load the index.html of the app.
