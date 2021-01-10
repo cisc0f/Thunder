@@ -1,30 +1,27 @@
-import { loadingWebView } from '../../scripts/webViewLoadingIndicator';
+function getActiveView () {
+    var views = document.querySelector('.views-container');
+    var activeView = views.querySelector('.active').firstChild;
 
-// Search active webview
-function searchActiveWebView() {
-    return document.querySelector('.active').firstChild;
+    return activeView;
 }
 
 // Forward Controller
 export function goForward() {
-    const webViewContainer = searchActiveWebView();
-    loadingWebView(webViewContainer);
+    const view = getActiveView();
     //@ts-ignore
-    webViewContainer.goForward();
+    view.goForward();
 }
 
 // Backward Controller
 export function goBackward() {
-    const webViewContainer = searchActiveWebView();
-    loadingWebView(webViewContainer);
+    const view = getActiveView();
     //@ts-ignore
-    webViewContainer.goBack();
+    view.goBack();
 }
 
 // Reload Controller
 export function reloadPage() {
-    const webViewContainer = searchActiveWebView();
-    loadingWebView(webViewContainer);
+    const view = getActiveView();
     //@ts-ignore
-    webViewContainer.reload();
+    view.reload();
 }

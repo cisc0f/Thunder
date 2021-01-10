@@ -91,10 +91,11 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 160px 160px;
-  border-radius: 20px 0px 0px 20px; /* TL TR BR BL */
+  border-radius: 15px 0px 0px 0px; /* TL TR BR BL */
+  overflow: hidden;
 }
 .content div, .content webview {
-  border-radius: 20px 0px 0px 20px; /* TL TR BR BL */
+  border-radius: 15px 0px 0px 0px; /* TL TR BR BL */
 }
 
 /* Visibility of Views */
@@ -122,4 +123,32 @@ button {
   visibility: visible !important;
   z-index: -999;
 }
+
+/* Loading Bar */
+.progress-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FFC700;
+  width: 0%;
+  height: 4px;
+  display: block;
+	border-radius: 10px;
+}
 /* + + + CLASSES + + + */
+
+
+
+/* + + + ANIMATIONS + + + */
+@keyframes bounce {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+/* + + + ANIMATIONS + + + */

@@ -10,6 +10,7 @@
 <div id="side-bar">
 	<!-- Search Button -->
 	<div class="top-sidebar">
+		<SideIconButton webid={"home"} image_url={"../../public/static/assets/images/icons/icon_logo.svg"} />
 		<SideIconButton webid={"account_1"} image_url={"../../public/static/assets/images/icons/icon_account.svg"} />
 	</div>
 

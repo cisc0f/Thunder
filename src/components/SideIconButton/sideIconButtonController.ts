@@ -1,4 +1,5 @@
 import { check_outros } from "svelte/internal";
+import { webViewLoading } from "../../scripts/webViewLoadingIndicator";
 
 // Set state of a view based on button clicked (active, hidden)
 export function setState(e) {
@@ -37,5 +38,8 @@ export function setState(e) {
             //iconButtons[i].classList.remove("active");
         }
     }
+
+    // Update active view and start loading bar
+    webViewLoading();
         
 }
